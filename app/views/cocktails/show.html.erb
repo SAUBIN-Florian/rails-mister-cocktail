@@ -3,7 +3,7 @@
   <br>
   <br><br>
   <%= link_to  "Add Ingredients", new_cocktail_dose_path(@cocktail) %>
-  <%= link_to "Delete Ingredient", dose_path(@cocktail), method: 'delete', data:{ confirm: "are you sure ?" } %>
+  <%= link_to "Delete Ingredient", dose_path(@dose.cocktail), method: 'delete', data:{ confirm: "are you sure ?" } %>
   <%= link_to "Delete Cocktail", cocktail_path(@cocktail), method: 'delete', data:{ confirm: "are you sure ?" } %>
   <br>
   <ul>
