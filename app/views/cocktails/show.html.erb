@@ -6,7 +6,7 @@
   <%= link_to "Delete Cocktail", cocktail_path(@cocktail), method: 'delete', data:{ confirm: "are you sure ?" } %>
   <br>
   <ul>
-    <% @doses.each do |dose| %>
+    <% @dose.cocktail.each do |dose| %>
       <li>
         <%= dose.description %> - <%= dose.ingredient.name %> - <%= link_to "Delete Ingredient", dose_path(@cocktail), method: 'delete' %>
       </li>
