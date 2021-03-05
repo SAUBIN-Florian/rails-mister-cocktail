@@ -1,9 +1,10 @@
 <div class="container main-container">
-  <h1>All our Cocktails</h1>
+<h1>All our Cocktails</h1>
 
-  <div class="cocktail">
-    <% @cocktails.each do |cocktail| %>
+<div class="cocktails">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card">
       <h5><%= link_to cocktail.name, cocktail_path(cocktail) %></h5>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </div>
