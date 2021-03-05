@@ -1,7 +1,7 @@
 <div class="container main-container">
   <h1>All our Cocktails</h1>
 
-  <div class="cocktail">
+  <div class="cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, height: 300, crop: :fill %>')">
     <% @cocktails.each do |cocktail| %>
       <h5><%= link_to cocktail.name, cocktail_path(cocktail) %></h5>
     <% end %>
